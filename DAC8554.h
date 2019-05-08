@@ -71,14 +71,14 @@ class DAC8554
       Set the DAC you are currently talking to. Up to four DACs can be connected in parallel. Only the DAC whos 
       A0 and A1 pins correspond to the two bits transferred here will react to the update.
       params:
-        A - integer representation of the DAC you wish to adress (0-3)
+        A - integer representation of the DAC you wish to address (0-3)
      */
     void setDAC(uint8_t A);
     
     /*
       Initialize all pins.
       This method prepares the DAC for communication by setting the correct pinmodes and such.
-      Call it once before your first transmission. If you dont, the code will call it automatically.
+      Call it once before your first transmission. If you don't, the code will call it automatically.
      */
     void initializePins();
 
@@ -93,7 +93,7 @@ class DAC8554
 
   private:
     /*
-      Set the appropriate bits to adress the selected channel and transfer the headerbyte.
+      Set the appropriate bits to address the selected channel and transfer the headerbyte.
       Bits 1 and 2 are the channel. If pin 5 is set, all channels are updated to the same value.
      */
     void sendHeader(int channel);
