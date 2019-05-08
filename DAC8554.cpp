@@ -20,7 +20,7 @@ DAC8554::DAC8554(bool useHardwareSPI)
   _A0 = 5;
   _LDAC = 8;
   _initialized = false; // Pins not set yet
-  changeChannelBits(0,0,0,1,1,0,1,1); // Set default values for how to adress the channels.
+  changeChannelBits(0,0,0,1,1,0,1,1); // Set default values for how to address the channels.
   _headerByte = B00010110;
 }
 
